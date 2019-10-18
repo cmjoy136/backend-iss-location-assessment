@@ -69,7 +69,7 @@ def turtle_stuff(iss_lon, iss_lat):
     indy.shapesize(0.25, 0.25)
     indy.color('yellow')
     indy.goto(indy_pos[0], indy_pos[1])
-    indy.write(time.ctime(iss_pass(iss_lon, iss_lat)))
+    indy.write(time.ctime(iss_pass(indy_pos[0], indy_pos[1])))
     screen.exitonclick()
 
 
